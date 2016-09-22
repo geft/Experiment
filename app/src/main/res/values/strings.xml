@@ -3,4 +3,6 @@
     <string name="input_insert_any_text">Insert any text</string>
     <string name="input_hello_world">Hello World</string>
     <string name="input_hello_secret">Hello Secret</string>
+
+    <string name="date_flow_close">Close</string>
 </resources>

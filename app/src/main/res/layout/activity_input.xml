@@ -8,7 +8,7 @@
             name="presenter"
             type="com.example.gerry.experiment.input.InputPresenter" />
         <variable
-            name="onClick"
+            name="onClickListener"
             type="android.view.View.OnClickListener" />
     </data>
 
@@ -41,14 +41,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:text="@android:string/ok"
-            android:onClick="@{view -> presenter.handleOkButton()}"/>
-
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/recycler_view"
-            android:minHeight="100dp"
-            android:background="@color/colorAccent"
-            />
+            android:onClick="@{onClickListener::onClick}"/>
     </LinearLayout>
 </layout>
